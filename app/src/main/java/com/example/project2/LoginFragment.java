@@ -76,7 +76,7 @@ public class LoginFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.login_fragment, container, false);
+        View view = inflater.inflate(R.layout.login_material_ui, container, false);
         userName = view.findViewById(R.id.userName);
         userPassword = view.findViewById(R.id.userPassword);
         loginButton = view.findViewById(R.id.loginButton);

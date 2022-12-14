@@ -38,15 +38,9 @@ public class DeliveryActivity extends AppCompatActivity {
                 break;
             }
         }
+        uName.setText(users.getName());
         uHomeAddress.setText(users.getUserHomeAddress());
         uWorkAddress.setText(users.getUserWorkAddress());
-
-        /*Intent intent = getIntent();
-        RoomUsers roomUsers = (RoomUsers) getIntent().getSerializableExtra("details");
-
-        uName.setText(roomUsers.getName());
-        uHomeAddress.setText(roomUsers.getUserHomeAddress());
-        uWorkAddress.setText(roomUsers.getUserWorkAddress());*/
 
     }
 }
