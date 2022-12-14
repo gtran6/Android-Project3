@@ -15,7 +15,8 @@ public abstract class RoomDatabaseUsers extends RoomDatabase {
     public static RoomDatabaseUsers getInstance(Context context) {
         try {
             if (INSTANCE == null) {
-                INSTANCE = Room.databaseBuilder(context.getApplicationContext(), RoomDatabaseUsers.class, "UserData")
+                INSTANCE = Room.databaseBuilder(context.getApplicationContext(),
+                                RoomDatabaseUsers.class, "UserData")
                         .allowMainThreadQueries()
                         .fallbackToDestructiveMigration()
                         .build();
